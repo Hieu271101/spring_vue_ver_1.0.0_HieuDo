@@ -18,12 +18,7 @@
 
      <div class="main-container">
          <div class="title">Giỏ Hàng Của Bạn </div>
-         <ul>
-         <li v-for="post in posts" :key="post.name">
-   <p>{{post.name}}</p>
-   <p>{{post.description}}</p>
- </li>
-     </ul>
+    
          <!-- <div class="scroll-view">
              <i class="fa-solid fa-basket-shopping fa-10x" style="margin-top:40px"></i>
              <div style="width:100%;text-align: center;font-size: 25px;margin-top: 35px;" ><label for="">Giỏ hàng trống</label></div>

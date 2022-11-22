@@ -80,7 +80,7 @@ public class MainRESTController {
     // http://localhost:8080/SomeContextPath/employee
     // http://localhost:8080/SomeContextPath/employee.xml
     // http://localhost:8080/SomeContextPath/employee.json
-    @RequestMapping(value = "/employee", //
+    @RequestMapping(value = "/product", //
             method = RequestMethod.PUT, //
             produces = { MediaType.APPLICATION_JSON_VALUE, //
                     MediaType.APPLICATION_XML_VALUE })

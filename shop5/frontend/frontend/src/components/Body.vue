@@ -42,45 +42,62 @@ export default {
              products:[]
         };
     },
-    created(){
-        this.products=[
-      {
-        img:'https://upload.lixibox.com/system/pictures/files/000/073/261/square/1654829019.jpg?t=1656905522 ',
-        title:'Kiin',
-        description:'Gel Bôi Sát Khuẩn Vùng Nướu Dành Cho Răng Viêm Nha Chu Loét Miệng PERIO KIN 30ml',
-        price:'126.000 đ',
-      },
-         {
-        img:'https://upload.lixibox.com/system/pictures/files/000/073/261/square/1654829019.jpg?t=1656905522 ',
-        title:'Kiin',
-        description:'Gel Bôi Sát Khuẩn Vùng Nướu Dành Cho Răng Viêm Nha Chu Loét Miệng PERIO KIN 30ml',
-        price:'126.000 đ',
-      },
-        {
-        img:'https://upload.lixibox.com/system/pictures/files/000/073/261/square/1654829019.jpg?t=1656905522 ',
-        title:'Kiin',
-        description:'Gel Bôi Sát Khuẩn Vùng Nướu Dành Cho Răng Viêm Nha Chu Loét Miệng PERIO KIN 30ml',
-        price:'126.000 đ',
-      },
-        {
-        img:'https://upload.lixibox.com/system/pictures/files/000/073/261/square/1654829019.jpg?t=1656905522 ',
-        title:'Kiin',
-        description:'Gel Bôi Sát Khuẩn Vùng Nướu Dành Cho Răng Viêm Nha Chu Loét Miệng PERIO KIN 30ml',
-        price:'126.000 đ',
-      },
-        {
-        img:'https://upload.lixibox.com/system/pictures/files/000/073/261/square/1654829019.jpg?t=1656905522 ',
-        title:'Kiin',
-        description:'Gel Bôi Sát Khuẩn Vùng Nướu Dành Cho Răng Viêm Nha Chu Loét Miệng PERIO KIN 30ml',
-        price:'126.000 đ',
-      },
-        {
-        img:'https://upload.lixibox.com/system/pictures/files/000/073/261/square/1654829019.jpg?t=1656905522 ',
-        title:'Kiin',
-        description:'Gel Bôi Sát Khuẩn Vùng Nướu Dành Cho Răng Viêm Nha Chu Loét Miệng PERIO KIN 30ml',
-        price:'126.000 đ',
-      },
-    ],
+   async created(){
+//     this.posts= await fetch('http://localhost:9090/products',{
+//      method:'GET',
+//      headers:{
+//          // 'Access-Control-Allow-Origin': '*',
+//  //    'Access-Control-Allow-Origin':'http://localhost:8080/products'
+     
+//      }
+   
+//  })
+// .then(response => response.json());
+
+        this.products=await fetch('http://localhost:9090/products',{
+          method:'GET',
+
+        }).then(response=> response.json())
+        
+    //     [
+    //   {
+    //     img:'https://upload.lixibox.com/system/pictures/files/000/073/261/square/1654829019.jpg?t=1656905522 ',
+    //     title:'Kiin',
+    //     description:'Gel Bôi Sát Khuẩn Vùng Nướu Dành Cho Răng Viêm Nha Chu Loét Miệng PERIO KIN 30ml',
+    //     price:'126.000 đ',
+    //   },
+    //      {
+    //     img:'https://upload.lixibox.com/system/pictures/files/000/073/261/square/1654829019.jpg?t=1656905522 ',
+    //     title:'Kiin',
+    //     description:'Gel Bôi Sát Khuẩn Vùng Nướu Dành Cho Răng Viêm Nha Chu Loét Miệng PERIO KIN 30ml',
+    //     price:'126.000 đ',
+    //   },
+    //     {
+    //     img:'https://upload.lixibox.com/system/pictures/files/000/073/261/square/1654829019.jpg?t=1656905522 ',
+    //     title:'Kiin',
+    //     description:'Gel Bôi Sát Khuẩn Vùng Nướu Dành Cho Răng Viêm Nha Chu Loét Miệng PERIO KIN 30ml',
+    //     price:'126.000 đ',
+    //   },
+    //     {
+    //     img:'https://upload.lixibox.com/system/pictures/files/000/073/261/square/1654829019.jpg?t=1656905522 ',
+    //     title:'Kiin',
+    //     description:'Gel Bôi Sát Khuẩn Vùng Nướu Dành Cho Răng Viêm Nha Chu Loét Miệng PERIO KIN 30ml',
+    //     price:'126.000 đ',
+    //   },
+    //     {
+    //     img:'https://upload.lixibox.com/system/pictures/files/000/073/261/square/1654829019.jpg?t=1656905522 ',
+    //     title:'Kiin',
+    //     description:'Gel Bôi Sát Khuẩn Vùng Nướu Dành Cho Răng Viêm Nha Chu Loét Miệng PERIO KIN 30ml',
+    //     price:'126.000 đ',
+    //   },
+    //     {
+    //     img:'https://upload.lixibox.com/system/pictures/files/000/073/261/square/1654829019.jpg?t=1656905522 ',
+    //     title:'Kiin',
+    //     description:'Gel Bôi Sát Khuẩn Vùng Nướu Dành Cho Răng Viêm Nha Chu Loét Miệng PERIO KIN 30ml',
+    //     price:'126.000 đ',
+    //   },
+    // ]
+    ,
    
         this.topProductList=[
       { id:'1',
@@ -112,7 +129,8 @@ export default {
       },
       
     ]
-    },
+    }
+    ,
     props:{
     //   products:Array,
     //   topProductList:Array

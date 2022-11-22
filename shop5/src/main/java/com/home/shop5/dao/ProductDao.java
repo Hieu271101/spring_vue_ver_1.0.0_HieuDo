@@ -21,23 +21,23 @@ public class ProductDao {
 	        initEmps();
 	    }
 	  private static void initEmps() {
-	        Product emp1 = new Product("Kiin", 
+	        Product emp1 = new Product("1","Kiin", "https://upload.lixibox.com/system/pictures/files/000/073/261/square/1654829019.jpg?t=1656905522",
 	        		"Gel Bôi Sát Khuẩn Vùng Nướu Dành Cho Răng Viêm Nha Chu Loét Miệng PERIO KIN 30ml", 
 	        		BigDecimal.valueOf(126000));
-	        Product emp2 = new Product("Re:p", 
+	        Product emp2 = new Product("2","Re:p","https://upload.lixibox.com/system/pictures/files/000/073/261/square/1654829019.jpg?t=1656905522" ,
 	        		"Mặt Nạ Đất Sét Thu Nhỏ Lỗ Chân Lông Cấp Ẩm Chiết Xuất Cây Hương Thảo Re:p Bio Fresh Mask With Real Nutrition Herbs 130g",
 	        		BigDecimal.valueOf(710000));
-	        Product emp3 = new Product("Re:p",
+	        Product emp3 = new Product("3","Re:p", "https://upload.lixibox.com/system/pictures/files/000/073/261/square/1654829019.jpg?t=1656905522",
 	        		"Kem Giảm Rạn Da Làm Săn Chắc Và Mờ Sẹo Re:p Natural Herb Ultra Firming Stretch Cream 200ml", 
 	        		BigDecimal.valueOf(760000));
-	        Product emp4 = new Product("DHC",
+	        Product emp4 = new Product("4","DHC", "https://upload.lixibox.com/system/pictures/files/000/073/261/square/1654829019.jpg?t=1656905522",
 	        		"Viên Uống Rau Củ DHC Perfect Vegetable Premium Japanese Harvest 15 Ngày (520mg X 60 Viên)", 
 	        		BigDecimal.valueOf(155000));
-
-	        empMap.put(emp1.getName(), emp1);
-	        empMap.put(emp2.getName(), emp2);
-	        empMap.put(emp3.getName(), emp3);
-	        empMap.put(emp4.getName(), emp4);
+	        
+	        empMap.put(emp1.getId(), emp1);
+	        empMap.put(emp2.getId(), emp2);
+	        empMap.put(emp3.getId(), emp3);
+	        empMap.put(emp4.getId(), emp4);
 	    }
 	  
 	  public Product getEmployee(String empNo) {
