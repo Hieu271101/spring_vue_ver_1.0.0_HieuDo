@@ -21,20 +21,18 @@
 </template>
 
 <script>
-import TopProducts from '../components/TopProducts.vue'
-import MainProductsVue from '../components/MainProducts.vue'
+import TopProducts from '../components/TopProducts.vue';
+import MainProductsVue from '../components/MainProducts.vue';
 import LayoutVue from '../components/Layout.vue';
-import VueprojectFilter from '../components/Filter.vue'
+import VueprojectFilter from '../components/Filter.vue';
 export default {
     name: 'BodyVue',
       components: {
-  
-    TopProducts,
-    MainProductsVue,
-    
-    VueprojectFilter,
-   LayoutVue
-},
+        TopProducts,
+        MainProductsVue,
+        VueprojectFilter,
+        LayoutVue
+      },
 
     data() {
         return {

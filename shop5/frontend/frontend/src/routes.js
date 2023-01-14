@@ -9,7 +9,9 @@ import ShopsVue from "./components/Shops.vue";
 import BodyVue from "./components/Body.vue";
 import GoodInCartVue from "./components/GoodInCart.vue";
 import MainManager from "./components/manager/MainManager.vue";
-
+import ManageProduct from "./components/manager/ManageProduct.vue";
+import Dashboard from "./components/manager/Dashboard.vue";
+import AddProduct from "./components/manager/AddProduct.vue";
 const routers=[
     {
         path:'/',
@@ -51,6 +53,21 @@ const routers=[
         name:'manager',
         component:MainManager
     },
+    {
+        path:'/manager/product',
+        name:'manageProduct',
+        component:ManageProduct
+    },
+    {
+        path:'/manager/dashboard',
+        name:'dashboard',
+        component:Dashboard
+    },
+    {
+        path:'/manager/product/addproduct',
+        name:'addproduct',
+        component:AddProduct
+    }
    
 
 ]
