@@ -10,19 +10,31 @@ public class Product extends BaseEntity {
 	private String id;
 	private String name;
 	private String img;
+	private int quantity;
 	private String description;
 	private BigDecimal price;
 	
 	
 	
 	
-	public Product(String id, String name,String img ,String description, BigDecimal price) {
+	
+	
+	public Product(String id, String name, String img, int quantity, String description, BigDecimal price) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.img=img;
+		this.img = img;
+		this.quantity = quantity;
 		this.description = description;
 		this.price = price;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
 
 	public String getId() {
